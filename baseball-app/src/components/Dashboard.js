@@ -11,14 +11,14 @@ const Dashboard = () => {
             setStrikes(strikes + 1);
         }
         else {
-            alert("Player has struck out")
+            alert("Player has struck out.")
             setBalls(0);
             setStrikes(0);
             if (outs < 2) {
                 setOuts(outs + 1);
             }
             else {
-                alert("End of inning");
+                alert("End of inning.");
                 setOuts(0);
             }
         }
@@ -29,7 +29,7 @@ const Dashboard = () => {
             setBalls(balls + 1);
         }
         else {
-            alert("Player walks");
+            alert("Player walks.");
             setBalls(0);
             setStrikes(0);
         }
@@ -42,7 +42,7 @@ const Dashboard = () => {
     }
 
     const hit = () => {
-        alert("Player hits");
+        alert("Player hits.");
         setBalls(0);
         setStrikes(0);
     }
